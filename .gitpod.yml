@@ -1,0 +1,14 @@
+tasks:
+  - name: nextjs
+    before: |
+      cd ui 
+      npm install
+      npm run build
+      cd ../api
+      npm install
+    command: |
+      gp open README.md
+ports:
+  - port: 3000
+    onOpen: open-browser
+    visibility: public

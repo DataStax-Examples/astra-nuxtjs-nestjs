@@ -9,12 +9,14 @@ export class AppService {
 
   async getClient() {
     const astraClient = await createClient({
-      astraDatabaseId: process.env.ASTRA_DATABASE_ID,
-      astraDatabaseRegion: process.env.ASTRA_DATABASE_REGION,
-      applicationToken: process.env.ASTRA_APPLICATION_TOKEN,
+      astraDatabaseId: process.env.ASTRA_DB_ID,
+      astraDatabaseRegion: process.env.ASTRA_DB_REGION,
+      applicationToken: process.env.ASTRA_DB_APPLICATION_TOKEN,
     });
 
-    return astraClient.namespace('NextJS').collection('members');
+    return astraClient
+      .namespace('sag_nuxtjs_fullstack')
+      .collection('sag_nest_members');
   }
 
   async getMembers() {
