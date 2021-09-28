@@ -1,6 +1,6 @@
 <!--- STARTEXCLUDE --->
 # NuxtJS + NestJS Fullstack Tutorial
-*30 minutes, Advanced, [Start Building](https://github.com/DataStax-Examples/astra-nuxtjs-nestjs/blob/master/README.md#quick-start)*
+*50 minutes, Advanced, [Start Building](https://github.com/DataStax-Examples/astra-nuxtjs-nestjs/blob/master/README.md#quick-start)*
 
 Create a fullstack NuxtJS + NestJS app while following along with the tutorial [video](https://www.youtube.com/watch?v=TbUpYeLn6SI) from Eddie Jaoude.
 <!--- ENDEXCLUDE --->
@@ -9,7 +9,7 @@ Create a fullstack NuxtJS + NestJS app while following along with the tutorial [
 
 ## Quick Start
 <!--- STARTEXCLUDE --->
-* [Signup for DataStax Astra](https://dtsx.io/2YNyxJT), or login to your already existing account. 
+* [Signup for DataStax Astra](https://dtsx.io/3APkrFZ), or login to your already existing account. 
 * [Create an Astra DB Database](https://github.com/DataStax-Examples/sample-app-template/blob/master/GETTING_STARTED.md#create-an-astra-db) if you don't already have one.
 <!--- ENDEXCLUDE --->
 * [Create an Astra DB Keyspace](https://github.com/DataStax-Examples/sample-app-template/blob/master/GETTING_STARTED.md#create-an-astra-db-keyspace) called `sag_nuxtjs_fullstack` in your database.
