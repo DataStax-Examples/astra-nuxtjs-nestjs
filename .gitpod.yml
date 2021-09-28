@@ -6,9 +6,10 @@ tasks:
       npm run build
       cd ../api
       npm install
+      npm run build
     command: |
       gp open README.md
 ports:
-  - port: 3000
+  - port: 3001
     onOpen: open-browser
     visibility: public
