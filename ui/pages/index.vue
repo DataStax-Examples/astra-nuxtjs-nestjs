@@ -59,7 +59,7 @@ export default {
     };
   },
   async fetch() {
-    this.items = await fetch("http://localhost:3001/members").then(res =>
+    this.items = await fetch("/members").then(res =>
       res.json()
     );
   },
@@ -67,7 +67,7 @@ export default {
     async save(e) {
       e.preventDefault();
       console.log(this.name, this.location, this.github);
-      await fetch("http://localhost:3001/members", {
+      await fetch("/members", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"

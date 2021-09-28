@@ -1,6 +1,7 @@
 tasks:
   - name: nextjs
     before: |
+      export NUXT_TELEMETRY_DISABLED=1
       cd ui 
       npm install
       npm run build
@@ -8,7 +9,7 @@ tasks:
       npm install
       npm run build
     command: |
-      gp open README.md
+      gp open ../README.md
 ports:
   - port: 3001
     onOpen: open-browser
